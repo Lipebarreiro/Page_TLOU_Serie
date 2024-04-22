@@ -1,0 +1,158 @@
+:root {
+    --color_01: #1e1d1c;
+    --color_02: #6f7065;
+    --color_03: #888b8c;
+    --color_04: #8b9483;
+    --color_05: #b3b29b;
+
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    width: min-content;
+    margin: auto;
+    background-color: var(--color_04);
+    border: 5px solid var(--color_04);
+}
+
+.header {
+    border: 2px solid var(--color_04);
+}
+
+.header img {
+    width: 900px;
+    height: 140px;
+}
+
+#nav {
+    background-color: var(--color_01);
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav li {
+    padding: 11px 0px 15px 0px;
+    float: left;
+}
+
+#nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color_05);
+}
+
+#nav a:hover {
+    background-color: var(--color_02);
+    color: var(--color_01);
+    transition: 0.4s;
+}
+
+.ativo {
+    background-color: var(--color_02);
+    color: var(--color_01);
+}
+
+.banner {
+    max-width: 100%;
+}
+
+.banner img {
+    display: block;
+    margin: auto;
+    width: 900px;
+    height: 400px;
+}
+
+.box {
+    padding: 10px;
+}
+
+.box h2 {
+    background-color: var(--color_01);
+    padding: 10px;
+    color: var(--color_05);
+    text-align: center;
+}
+
+.box p {
+    font-size: 20px;
+    text-align: justify;
+    color: var(--color_01);
+    border-top: 2px solid var(--color_01);
+    
+}
+
+.content img {
+    width: 900px;
+    height: 400px;
+}
+
+#saiba_mais {
+    text-align: center;
+    margin: 25px 0px 55px 0px;
+    font-size: 22px;
+}
+
+#saiba_mais a {
+    text-decoration: none;
+    color: var(--color_01);
+    border: 5px solid var(--color_01);
+    border-radius: 30px;
+    border-color: var(--color_02);
+    padding: 8px;
+}
+
+#saiba_mais a:hover {
+    background-color: var(--color_02);
+    color: var(--color_05);
+    transition: 0.4s;
+}
+
+.footer {
+    border: 8px solid var(--color_01);
+    background-color: var(--color_01);
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--color_05);
+}
+
+/* Tela de computador */
+@media screen and (max-width: 1024px) {
+    .main {
+        width: 75%;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .content img {
+        width: 100%;
+    }
+}
+
+/* Tela de tablet */
+@media screen and (max-width: 768px) {
+    .main {
+        width: auto;
+    }
+}
